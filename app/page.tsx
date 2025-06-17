@@ -77,7 +77,13 @@ export default function ObituaryPage() {
                   </p>
 
                   <p>
-                    In lieu of flowers, donations may be made in Velma’s memory to <strong><Link href="https://communitycancercare.ca/">Community Cancer Care, New Liskeard</Link></strong>.
+                    In lieu of flowers, donations may be made in Velma’s memory to <strong className="text-blue-600 font-medium">
+  <Link className="underline hover:text-blue-800" href="https://communitycancercare.ca/" >
+    
+      Community Cancer Care, New Liskeard
+    
+  </Link>
+</strong>.
                   </p>
                 </div>
 
