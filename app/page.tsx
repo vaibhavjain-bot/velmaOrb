@@ -94,8 +94,8 @@ export default function ObituaryPage() {
                   <h3 className="text-2xl font-serif text-slate-800">Service Information</h3>
                   <div className="space-y-2 text-slate-600">
                     <p><strong>Visitation:</strong> Thursday, June 19th, 2:00–4:00 PM and 7:00–9:00 PM</p>
-                    <p><strong>Location:</strong> Buffam Leveille Funeral Home</p>
-                    <p>251 Shepherdson Road, New Liskeard, Ontario</p>
+                    <p><strong>Location:</strong><Link className="underline hover:text-blue-800" href="https://maps.app.goo.gl/8xje7Esj2fZkCzie6"> Buffam Leveille Funeral Home
+                    251 Shepherdson Road, New Liskeard, Ontario</Link></p>
                   </div>
                 </div>
               </div>
