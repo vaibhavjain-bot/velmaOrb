@@ -1,103 +1,123 @@
-import Image from "next/image";
+import Image from "next/image"
+import { Card, CardContent } from "@/components/ui/card"
+import { Separator } from "@/components/ui/separator"
+import Link from "next/link"
 
-export default function Home() {
+
+export default function ObituaryPage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-pink-50 text-slate-800">
+      {/* Header */}
+      <header className="bg-white/70 shadow-sm border-b">
+        <div className="container mx-auto px-4 py-6">
+          <h1 className="text-3xl font-serif text-center text-rose-800">In Loving Memory of Velma Nichol</h1>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </header>
+
+      {/* Hero Section */}
+      <section className="py-12 md:py-16">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col items-center text-center space-y-6">
+            {/* Photo */}
+            <div className="relative">
+              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-xl border-4 border-white ring-4 ring-pink-200">
+                <Image
+                  src="/velma.JPG" // Replace with actual image path
+                  alt="Velma Nichol"
+                  width={320}
+                  height={320}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-white/90 px-4 py-1 rounded-full shadow">
+                <span className="text-sm text-slate-600 font-medium">1939 – 2025</span>
+              </div>
+            </div>
+
+            {/* Name */}
+            <div className="space-y-2">
+              <h2 className="text-4xl md:text-5xl font-serif text-rose-900">Velma Nichol</h2>
+              <p className="text-lg text-slate-600 font-light">Beloved Wife, Mother, Grandmother & Friend</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Obituary Text */}
+      <section className="py-12 bg-white/80">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <Card className="bg-white/90 backdrop-blur-md shadow-xl border-0 rounded-xl">
+            <CardContent className="p-8 md:p-12">
+              <div className="prose prose-lg max-w-none text-slate-700 leading-relaxed">
+                <p className="text-xl font-light mb-6 text-center italic text-pink-800">
+                  “Her spirit lives on in every laugh, every gathering, and every sunset.”
+                </p>
+
+                <Separator className="my-8" />
+
+                <div className="space-y-6">
+                  <p>
+                    With full hearts and cherished memories, we announce the peaceful passing of <strong>Velma Nichol</strong> on <strong>June 14th, 2025</strong>, surrounded by the love and warmth of her family. Though our hearts are heavy, we celebrate a life beautifully lived—a woman who was so much more than a wife, mother, grandmother, and friend; she was a light, a pillar, and a joy to all who knew her.
+                  </p>
+
+                  <p>
+                    Velma will be dearly missed by her loving husband <strong>Fred</strong>; children <strong>Brenda (Gary)</strong> and <strong>Greg</strong>; her treasured grandchildren <strong>Cassandra (Drew), Megan (VJ)</strong>, and <strong>Maiya</strong>; and siblings <strong>Lois, Barbara, Lorne (Eleanor), Laura Jean (Nelson)</strong>, and <strong>Dorothy</strong>. She is now reunited with her beloved daughter <strong>Lianne</strong>, her parents <strong>Barbara and Wycliffe</strong>, and siblings who passed before her.
+                  </p>
+
+                  <p>
+                    Born in Kenabeek, Ontario, Velma attended McCool School and New Liskeard High. She worked at Northern Telephone and later found joy raising her family. In time, she returned to work at the Ministry of Natural Resources and Connor’s Saw Mill until her retirement.
+                  </p>
+
+                  <p>
+                    Her greatest joys were never things—they were people. She cherished family dinners, porch gatherings filled with laughter, and holiday traditions. She loved snowmen, hummingbirds, sunsets, and Christmas more than words could say.
+                  </p>
+
+                  <p>
+                    The Nichol family extends deep thanks to the compassionate teams at Sudbury’s Health Science Centre and Temiskaming Hospital. Your kindness carried us through.
+                  </p>
+
+                  <p>
+                    In lieu of flowers, donations may be made in Velma’s memory to <strong><Link href="https://communitycancercare.ca/">Community Cancer Care, New Liskeard</Link></strong>.
+                  </p>
+                </div>
+
+                <Separator className="my-8" />
+
+                {/* Service Info */}
+                <div className="text-center space-y-4">
+                  <h3 className="text-2xl font-serif text-slate-800">Service Information</h3>
+                  <div className="space-y-2 text-slate-600">
+                    <p><strong>Visitation:</strong> Thursday, June 19th, 2:00–4:00 PM and 7:00–9:00 PM</p>
+                    <p><strong>Location:</strong> Buffam Leveille Funeral Home</p>
+                    <p>251 Shepherdson Road, New Liskeard, Ontario</p>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Photo Gallery */}
+      <section className="py-16 bg-gradient-to-t from-pink-50 to-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-serif text-rose-900 mb-4">Celebrating Velma’s Beautiful Life</h3>
+            <p className="text-slate-600 max-w-2xl mx-auto">
+              A gallery of special moments capturing her warmth, joy, and love for family.
+            </p>
+          </div>
+          
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-white border-t py-8 text-center">
+        <p className="text-pink-700 italic">
+          “Those we love don’t go away, they walk beside us every day.”
+        </p>
+        <p className="text-sm text-slate-400 mt-4">© 2025 The Nichol Family. All rights reserved.</p>
       </footer>
     </div>
-  );
+  )
 }
