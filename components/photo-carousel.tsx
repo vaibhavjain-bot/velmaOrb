@@ -10,57 +10,68 @@ const photos = [
   {
     id: 1,
     src:'/velmaCas/velmaCas1.jpg',
-    alt: 'photo'
+    alt: 'photo',
+    caption:'photo'
   },
   {
     id: 2,
     src: "/velmaCas/velmaCas2.jpg",
-    alt: 'photo'
+    alt: 'photo',
+    caption:'photo'
   },
   {
     id: 3,
     src: "/velmaCas/velmaCas3.jpg",
-    alt: 'photo'
+    alt: 'photo',
+    caption:'photo'
   },
   {
     id: 4,
     src: "/velmaCas/velmaCas4.jpg",
-    alt: 'photo'
+    alt: 'photo',
+    caption:'photo'
   },
   {
     id: 5,
     src: "/velmaCas/velmaCas5.jpg",
-    alt: 'photo'
+    alt: 'photo',
+    caption:'photo'
   },
   {
     id: 6,
     src: "/velmaCas/velmaCas6.webp",
-    alt: 'photo'
+    alt: 'photo',
+    caption:'photo'
   },
   {
     id: 7,
     src: "/velmaCas/velmaCas7.jpg",
-    alt: 'photo'
+    alt: 'photo',
+    caption:'photo'
   },
   {
     id: 8,
     src: "/velmaCas/velmaCas8.jpg",
-    alt: 'photo'
+    alt: 'photo',
+    caption:'photo'
   },
   {
     id: 9,
     src: "/velmaCas/velmaCas9.webp",
-    alt: 'photo'
+    alt: 'photo',
+    caption:'photo'
   },
   {
     id: 10,
     src: "/velmaCas/velmaCas10.webp",
-    alt: 'photo'
+    alt: 'photo',
+    caption:'photo'
   },
   {
     id: 11,
     src: "/velmaCas/velmaCas11.webp",
-    alt: 'photo'
+    alt: 'photo',
+    caption:'photo'
   },
   
   
@@ -85,7 +96,7 @@ export default function PhotoCarousel() {
 
   // Handle escape key for fullscreen
   useEffect(() => {
-    const handleEscape = (e) => {
+    const handleEscape = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
         setIsFullscreen(false)
       }
@@ -112,7 +123,7 @@ export default function PhotoCarousel() {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + photos.length) % photos.length)
   }
 
-  const goToSlide = (index) => {
+  const goToSlide = (index:number) => {
     setCurrentIndex(index)
   }
 
