@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
+import PhotoCarousel from "@/components/photo-carousel"
 import Link from "next/link"
 
 
@@ -104,15 +105,43 @@ export default function ObituaryPage() {
         </div>
       </section>
 
-      {/* Photo Gallery */}
-      <section className="py-16 bg-gradient-to-t from-pink-50 to-white">
+      {/* Video and Slideshow Section */}
+      <section className="py-16 bg-slate-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-serif text-rose-900 mb-4">Celebrating Velma’s Beautiful Life</h3>
-            <p className="text-slate-600 max-w-2xl mx-auto">
-              A gallery of special moments capturing her warmth, joy, and love for family.
+          {/* YouTube Video Section */}
+          <section className="py-16 bg-gradient-to-t from-pink-50 to-white">
+        <div className="container mx-auto px-4">
+           <div className="text-center mb-12">
+            <h3 className="text-3xl font-serif text-rose-900 mb-4">Celebrating Velma’s Beautiful Life</h3> 
+             <p className="text-slate-600 mb-3 max-w-2xl mx-auto">
+            Watch this tribute video celebrating Velmas's remarkable journey
+            </p>
+            {/* <div className="max-w-4xl mx-auto">
+              <div className="relative aspect-video bg-slate-200 rounded-lg overflow-hidden shadow-lg">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  title="Memorial Video Tribute"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div> */}
+          </div> 
+
+          {/* Carousel Slideshow */}
+          <div className="text-center mb-8">
+            <h4 className="text-2xl font-serif text-slate-800 mb-4">Cherished Memories</h4>
+            <p className="text-slate-600 max-w-xl mx-auto">
+              A collection of precious moments that tell the story of a life well-lived
             </p>
           </div>
+          <PhotoCarousel />
+        </div>
+      </section>
+      
+          
           
         </div>
       </section>
