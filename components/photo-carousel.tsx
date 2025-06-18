@@ -73,6 +73,12 @@ const photos = [
     alt: 'photo',
     caption:'photo'
   },
+  {
+    id: 12,
+    src: "/velmaCas/velmaCas12.jpg",
+    alt: 'photo',
+    caption:'photo'
+  },
   
   
   
