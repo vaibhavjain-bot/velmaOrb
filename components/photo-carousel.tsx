@@ -15,25 +15,25 @@ const photos = [
   },
   {
     id: 2,
-    src: "/velmaCas/velmaCas2.jpg",
+    src: "/velmaCas/velmacas2.jpg",
     alt: 'photo',
     caption:'photo'
   },
   {
     id: 3,
-    src: "/velmaCas/velmaCas3.jpg",
+    src: "/velmaCas/velmacas3.jpg",
     alt: 'photo',
     caption:'photo'
   },
   {
     id: 4,
-    src: "/velmaCas/velmaCas4.jpg",
+    src: "/velmaCas/velmacas4.jpg",
     alt: 'photo',
     caption:'photo'
   },
   {
     id: 5,
-    src: "/velmaCas/velmaCas5.jpg",
+    src: "/velmaCas/velmacas5.jpg",
     alt: 'photo',
     caption:'photo'
   },
