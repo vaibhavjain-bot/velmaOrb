@@ -51,7 +51,7 @@ export default function ObituaryPage() {
             <CardContent className="p-8 md:p-12">
               <div className="prose prose-lg max-w-none text-slate-700 leading-relaxed">
                 <p className="text-xl font-light mb-6 text-center italic text-pink-800">
-                  “Her spirit lives on in every laugh, every gathering, and every sunset.”
+                  "Her spirit lives on in every laugh, every gathering, and every sunset."
                 </p>
 
                 <Separator className="my-8" />
@@ -66,7 +66,7 @@ export default function ObituaryPage() {
                   </p>
 
                   <p>
-                    Born in Kenabeek, Ontario, Velma attended McCool School and New Liskeard High. She worked at Northern Telephone and later found joy raising her family. In time, she returned to work at the Ministry of Natural Resources and Connor’s Saw Mill until her retirement.
+                    Born in Kenabeek, Ontario, Velma attended McCool School and New Liskeard High. She worked at Northern Telephone and later found joy raising her family. In time, she returned to work at the Ministry of Natural Resources and Connor&apos;s Saw Mill until her retirement.
                   </p>
 
                   <p>
@@ -74,11 +74,11 @@ export default function ObituaryPage() {
                   </p>
 
                   <p>
-                    The Nichol family extends deep thanks to the compassionate teams at Sudbury’s Health Science Centre and Temiskaming Hospital. Your kindness carried us through.
+                    The Nichol family extends deep thanks to the compassionate teams at Sudbury&apos;s Health Science Centre and Temiskaming Hospital. Your kindness carried us through.
                   </p>
 
                   <p>
-                    In lieu of flowers, donations may be made in Velma’s memory to <strong className="text-blue-600 font-medium">
+                    In lieu of flowers, donations may be made in Velma&apos;s memory to <strong className="text-blue-600 font-medium">
   <Link className="underline hover:text-blue-800" href="https://communitycancercare.ca/" >
     
       Community Cancer Care, New Liskeard
@@ -112,9 +112,9 @@ export default function ObituaryPage() {
           <section className="py-16 bg-gradient-to-t from-pink-50 to-white">
         <div className="container mx-auto px-4">
            <div className="text-center mb-12">
-            <h3 className="text-3xl font-serif text-rose-900 mb-4">Celebrating Velma’s Beautiful Life</h3> 
+            <h3 className="text-3xl font-serif text-rose-900 mb-4">Celebrating Velma&apos;s Beautiful Life</h3> 
              <p className="text-slate-600 mb-3 max-w-2xl mx-auto">
-            Watch this tribute video celebrating Velmas's remarkable journey
+            Watch this tribute video celebrating Velma&apos;s remarkable journey
             </p>
             {/* <div className="max-w-4xl mx-auto">
               <div className="relative aspect-video bg-slate-200 rounded-lg overflow-hidden shadow-lg">
@@ -149,7 +149,7 @@ export default function ObituaryPage() {
       {/* Footer */}
       <footer className="bg-white border-t py-8 text-center">
         <p className="text-pink-700 italic">
-          “Those we love don’t go away, they walk beside us every day.”
+          "Those we love don&apos;t go away, they walk beside us every day."
         </p>
         <p className="text-sm text-slate-400 mt-4">© 2025 The Nichol Family. All rights reserved.</p>
       </footer>
