@@ -116,18 +116,18 @@ export default function ObituaryPage() {
              <p className="text-slate-600 mb-3 max-w-2xl mx-auto">
             Watch this tribute video celebrating Velma&apos;s remarkable journey
             </p>
-            {/* <div className="max-w-4xl mx-auto">
+            <div className="max-w-4xl mx-auto">
               <div className="relative aspect-video bg-slate-200 rounded-lg overflow-hidden shadow-lg">
                 <iframe
                   className="w-full h-full"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  src="https://www.youtube.com/embed/8LWMDNcEdD8?si=2s8RKW_brKoqgs6"
                   title="Memorial Video Tribute"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
               </div>
-            </div> */}
+            </div>
           </div> 
 
           {/* Carousel Slideshow */}

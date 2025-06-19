@@ -19,62 +19,62 @@ const photos = [
     alt: 'photo',
     caption:'photo'
   },
+  // {
+  //   id: 3,
+  //   src: "/velmaCas/velmacas3.jpg",
+  //   alt: 'photo',
+  //   caption:'photo'
+  // },
   {
     id: 3,
-    src: "/velmaCas/velmacas3.jpg",
-    alt: 'photo',
-    caption:'photo'
-  },
-  {
-    id: 4,
     src: "/velmaCas/velmacas4.jpg",
     alt: 'photo',
     caption:'photo'
   },
   {
-    id: 5,
+    id: 4,
     src: "/velmaCas/velmacas5.jpg",
     alt: 'photo',
     caption:'photo'
   },
   {
-    id: 6,
+    id: 5,
     src: "/velmaCas/velmaCas6.webp",
     alt: 'photo',
     caption:'photo'
   },
   {
-    id: 7,
+    id: 6,
     src: "/velmaCas/velmaCas7.jpg",
     alt: 'photo',
     caption:'photo'
   },
   {
-    id: 8,
+    id: 7,
     src: "/velmaCas/velmaCas8.jpg",
     alt: 'photo',
     caption:'photo'
   },
   {
-    id: 9,
+    id: 8,
     src: "/velmaCas/velmaCas9.webp",
     alt: 'photo',
     caption:'photo'
   },
   {
-    id: 10,
+    id: 9,
     src: "/velmaCas/velmaCas10.webp",
     alt: 'photo',
     caption:'photo'
   },
   {
-    id: 11,
+    id: 10,
     src: "/velmaCas/velmaCas11.webp",
     alt: 'photo',
     caption:'photo'
   },
   {
-    id: 12,
+    id: 11,
     src: "/velmaCas/velmaCas12.jpg",
     alt: 'photo',
     caption:'photo'
@@ -95,7 +95,7 @@ export default function PhotoCarousel() {
 
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % photos.length)
-    }, 4000) // Change slide every 4 seconds
+    }, 6000) // Change slide every 4 seconds
 
     return () => clearInterval(interval)
   }, [isPlaying, isFullscreen])
