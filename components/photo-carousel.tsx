@@ -88,7 +88,20 @@ export default function PhotoCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isPlaying, setIsPlaying] = useState(true)
   const [isFullscreen, setIsFullscreen] = useState(false)
+  const [isTransitioning, setIsTransitioning] = useState(false)
 
+  // Handle smooth transitions
+  const changePhoto = (newIndex: number) => {
+    if (newIndex === currentIndex) return
+    
+    setIsTransitioning(true)
+    
+    // After fade out completes, change the image
+    setTimeout(() => {
+      setCurrentIndex(newIndex)
+      setIsTransitioning(false)
+    }, 150)
+  }
   // Auto-advance slideshow
   useEffect(() => {
     if (!isPlaying || isFullscreen) return
@@ -229,7 +242,11 @@ export default function PhotoCarousel() {
                   alt={photos[currentIndex].alt}
                   width={800}
                   height={600}
-                  className="object-contain max-w-full max-h-full cursor-pointer"
+                  className={`object-contain max-w-full max-h-full cursor-pointer transition-all duration-300 ease-in-out transform ${
+                    isTransitioning 
+                      ? 'opacity-0 scale-105' 
+                      : 'opacity-100 scale-100'
+                  }`}
                   style={{ width: 'auto', height: 'auto', maxHeight: '600px' }}
                   onClick={openFullscreen}
                 />
