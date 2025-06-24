@@ -91,7 +91,7 @@ export default function EulogiesSection() {
     setShowFullText(false)
   }
 
-  const selectEulogy = (index) => {
+  const selectEulogy = (index :number   ) => {
     setSelectedEulogy(index)
     setShowFullText(false)
   }
